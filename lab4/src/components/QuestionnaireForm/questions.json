@@ -1,0 +1,82 @@
+[
+    {
+        "a": "expend energy, enjoy groups",
+        "b": "conserve energy, enjoy one-on-one"
+    },
+    {
+        "a": "more outgoing, think out loud",
+        "b": "more reserved, think to yourself"
+    },
+    {
+        "a": "seek many tasks, public activities, interaction with others",
+        "b": "seek private, solitary activities with quiet to concentrate"
+    },
+    {
+        "a": "external, communicative, express yourself",
+        "b": "seek private, solitary activities with quiet to concentrate"
+    },
+    {
+        "a": "active, initiate",
+        "b": "reflective, deliberate"
+    },
+    {
+        "a": "interpret literally",
+        "b": "look for meaning and possibilities"
+    },
+    {
+        "a": "practical, realistic, experiential",
+        "b": "imaginative, innovative, theoretical"
+    },
+    {
+        "a": "standard, usual, conventional",
+        "b": "different, novel, unique"
+    },
+    {
+        "a": "focus on here-and-now",
+        "b": "look to the future, global perspective, “big picture”"
+    },
+    {
+        "a": "facts, things, “what is”",
+        "b": "ideas, dreams, “what could be,” philosophical"
+    },
+    {
+        "a": "logical, thinking, questioning",
+        "b": "empathetic, feeling, accommodating"
+    },
+    {
+        "a": "candid, straight forward, frank",
+        "b": "tactful, kind, encouraging"
+    },
+    {
+        "a": "firm, tend to criticize, hold the line",
+        "b": "gentle, tend to appreciate, conciliate"
+    },
+    {
+        "a": "tough-minded, just",
+        "b": "tender-hearted, merciful"
+    },
+    {
+        "a": "matter of fact, issue-oriented",
+        "b": "sensitive, people-oriented, compassionate"
+    },
+    {
+        "a": "organized, orderly or",
+        "b": "flexible, adaptable"
+    },
+    {
+        "a": "plan, schedule",
+        "b": "unplanned, spontaneous"
+    },
+    {
+        "a": "regulated, structured",
+        "b": "easygoing, “live” and “let live”"
+    },
+    {
+        "a": "preparation, plan ahead",
+        "b": "go with the flow, adapt as you go"
+    },
+    {
+        "a": "control, govern",
+        "b": "latitude, freedom"
+    }
+]

@@ -5,7 +5,7 @@ const QuestionBlock = ({
   handleSelectAnswer,
 }) => (
   <div className='questionBlock'>
-    <h1>{question}</h1>
+    <h1><pre>{question}</pre></h1>
     <div className='buttons'>
       {[left, right].map(({id, answer}) => (
         <button

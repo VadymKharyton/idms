@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className='app'>
-      <h1>Do you have a possibility to be applied to this position?</h1>
+      <h1>Which type of transport will be the best for your trip?</h1>
       <QuestionnaireForm
         className='questionnaireForm'
       />

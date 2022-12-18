@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className='app'>
-      <h1>Do you have a possibility to be applied to this position?</h1>
+      <h1>Myers–Briggs Type Indicator result:</h1>
       <QuestionnaireForm
         className='questionnaireForm'
       />

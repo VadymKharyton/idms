@@ -1,33 +1,33 @@
 import { useState } from "react";
 import Form from "../Form";
-import './CreditForm.css';
+import './QuestionnaireForm.css';
 
-const CreditForm = ({ className }) => {
+const QuestionnaireForm = ({ className }) => {
   const [wasFormSubmitted, setWasFormSubmitted] = useState(false);
-  const [canGetLoan, setCanGetLoan] = useState(false);
-  const message = canGetLoan
-    ? 'Ви можете оформити кредит'
-    : 'Ви не можете оформити кредит';
+  const [canBeApplied, setCanBeApplied] = useState(false);
+  const message = canBeApplied
+    ? 'Congratulations! You CAN be applied to this position!'
+    : 'Unfortunetely, You CAN NOT be applied to this position!';
 
   const initialValues = {
-    isSpecialtyMatch: false,
-    ageLess45: false,
-    hasSpecialtyExperience: false,
+    hasDegree: false,
+    hasPassedCourses: false,
+    hasExperience: false,
   };
 
   const handleSubmit = (values) => {
     const {
-      isSpecialtyMatch,
-      ageLess45,
-      hasSpecialtyExperience,
+      hasDegree,
+      hasPassedCourses,
+      hasExperience,
     } = values;
-    const canGetLoanNew = (isSpecialtyMatch || ageLess45) && hasSpecialtyExperience;
-    setCanGetLoan(canGetLoanNew);
+    const res = (hasDegree || hasPassedCourses) && hasExperience;
+    setCanBeApplied(res);
     setWasFormSubmitted(true);
   };
 
   const reset = () => {
-    setCanGetLoan(false);
+    setCanBeApplied(false);
     setWasFormSubmitted(false);
   };
 
@@ -37,7 +37,7 @@ const CreditForm = ({ className }) => {
         ? (
           <div className="finalMessageBlock">
             <h3
-              className={`finalMessage ${canGetLoan ? 'success' : 'error'}`}
+              className={`finalMessage ${canBeApplied ? 'success' : 'error'}`}
             >
               {message}
             </h3>
@@ -45,7 +45,7 @@ const CreditForm = ({ className }) => {
               type="button"
               onClick={reset}
               className='button back'
-            >Назад</button>
+            >Back to questions</button>
           </div>
         )
         : (
@@ -61,16 +61,16 @@ const CreditForm = ({ className }) => {
 
               const fields = [
                 {
-                  title: 'Чи навчались ви у ВНЗ за цією спеціальністю?',
-                  name: 'isSpecialtyMatch',
+                  title: 'Has Bachelor degree in Computer Science?',
+                  name: 'hasDegree',
                 },
-                !values.isSpecialtyMatch && {
-                  title: 'Ваш вік менше 45?',
-                  name: 'ageLess45',
+                !values.hasDegree && {
+                  title: 'Has passed Computer Science courses?',
+                  name: 'hasPassedCourses',
                 },
                 {
-                  title: 'Чи маєте досвід роботи за даною спеціальністю?',
-                  name: 'hasSpecialtyExperience',
+                  title: 'Has 2 years experience in this profile?',
+                  name: 'hasExperience',
                 },
               ].filter(Boolean);
 
@@ -91,7 +91,7 @@ const CreditForm = ({ className }) => {
                               checked={values[name]}
                               onChange={() => handleChangeRadio(name, true)}
                             />
-                            Так
+                            YES
                           </label>
                           <label className="answer">
                             <input
@@ -100,7 +100,7 @@ const CreditForm = ({ className }) => {
                               checked={!values[name]}
                               onChange={() => handleChangeRadio(name, false)}
                             />
-                            Ні
+                            NO
                           </label>
                         </div>
                       </div>
@@ -113,13 +113,13 @@ const CreditForm = ({ className }) => {
                       onClick={resetForm}
                       className='button reset'
                     >
-                      Reset
+                      Reset values
                     </button>
                     <button
                       type='submit'
                       className='button submit'
                     >
-                      Submit
+                      Check result
                     </button>
                   </div>
                 </>
@@ -131,4 +131,4 @@ const CreditForm = ({ className }) => {
   )
 };
 
-export default CreditForm;
+export default QuestionnaireForm;

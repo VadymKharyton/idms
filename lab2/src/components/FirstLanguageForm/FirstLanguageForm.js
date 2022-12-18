@@ -121,43 +121,43 @@ const languages = {
 
 const nodesInfo = {
   [QUESTION_ID.YOU_WANT_WORK_ON]: getNodeInfo({
-    question: 'Ти більше хотів би працювати з ...',
-    leftAnswer: 'Візуальною складовою програми',
+    question: 'Choose your first language. Please answer on following questions: \n\n\nWould you rather work with...',
+    leftAnswer: 'The visual component of the program',
     leftId: QUESTION_ID.WITHOUT_ADDITIONAL_INSTALLING,
-    rightAnswer: 'Налаштування "мізків" програми (розробка логіки, структури)',
+    rightAnswer: 'Setting up the "brains" of the program (development of logic, structure)',
     rightId: QUESTION_ID.KEEP_BITES_ON_CONTROL,
   }),
 
   [QUESTION_ID.WITHOUT_ADDITIONAL_INSTALLING]: getNodeInfo({
-    question: 'Хочеш почати писати код без додаткових встановлень?',
-    leftAnswer: 'Так',
+    question: 'Want to start writing code without additional installations?',
+    leftAnswer: 'Yes',
     leftId: LANGUAGES.JS,
-    rightAnswer: 'Можу встановити все, що потрібно',
+    rightAnswer: 'I can install everything that is needed',
     rightId: QUESTION_ID.MOBILE_NATIVE_APPS
   }),
 
   [LANGUAGES.JS]: getNodeLanguage(LANGUAGES.JS),
 
   [QUESTION_ID.MOBILE_NATIVE_APPS]: getNodeInfo({
-    question: 'Хотів би спробувати розробку нативних мобільних додатків?',
-    leftAnswer: 'Так',
+    question: 'Would you like to try native mobile app development?',
+    leftAnswer: 'Yes',
     leftId: QUESTION_ID.IOS_AND_ANDROID,
-    rightAnswer: 'Ні',
+    rightAnswer: 'No',
     rightId: QUESTION_ID.SITE_WITH_ADMIN_PANEL,
   }),
 
   [QUESTION_ID.IOS_AND_ANDROID]: getNodeInfo({
-    question: 'Хочеш писати додатки, що підтримуються як IOS так і Android?',
-    leftAnswer: 'Так',
+    question: 'Do you want to write applications that are supported by both IOS and Android?',
+    leftAnswer: 'Yes',
     leftId: LANGUAGES.RN,
-    rightAnswer: 'Ні, щось одне',
+    rightAnswer: 'No, only one',
     rightId: QUESTION_ID.WHICH_MOBILE_OS,
   }),
 
   [LANGUAGES.RN]: getNodeLanguage(LANGUAGES.RN),
 
   [QUESTION_ID.WHICH_MOBILE_OS]: getNodeInfo({
-    question: 'Для якої мобільної ОС хочеш писати додатки?',
+    question: 'For which mobile OS do you want to write applications?',
     leftAnswer: 'IOS',
     leftId: LANGUAGES.SWIFT,
     rightAnswer: 'Android',
@@ -169,38 +169,38 @@ const nodesInfo = {
   [LANGUAGES.JAVA_KOTLIN]: getNodeLanguage(LANGUAGES.JAVA_KOTLIN),
 
   [QUESTION_ID.SITE_WITH_ADMIN_PANEL]: getNodeInfo({
-    question: 'Хочеш зробити свій сайт із авторизацією та панеллю налаштувань тут і зараз?',
-    leftAnswer: 'Так',
+    question: 'Do you want to make your site with authorization and settings panel here and now?',
+    leftAnswer: 'Yes',
     leftId: LANGUAGES.PHP,
-    rightAnswer: 'Ні',
+    rightAnswer: 'No',
     rightId: QUESTION_ID.USE_AI,
   }),
 
   [LANGUAGES.PHP]: getNodeLanguage(LANGUAGES.PHP),
 
   [QUESTION_ID.USE_AI]: getNodeInfo({
-    question: 'Тебе цікавить розробка із використанням штучного інтелекту (AI)?',
-    leftAnswer: 'Так',
+    question: 'Are you interested in developing with artificial intelligence (AI)?',
+    leftAnswer: 'Yes',
     leftId: LANGUAGES.PYTHON,
-    rightAnswer: 'Ні',
+    rightAnswer: 'No',
     rightId: QUESTION_ID.KEEP_BITES_ON_CONTROL,
   }),
 
   [LANGUAGES.PYTHON]: getNodeLanguage(LANGUAGES.PYTHON),
 
   [QUESTION_ID.KEEP_BITES_ON_CONTROL]: getNodeInfo({
-    question: 'Хочеш тримати всі байти під контролем?',
-    leftAnswer: 'Так',
+    question: 'Want to keep all the bytes under control?',
+    leftAnswer: 'Yes',
     leftId: LANGUAGES.Cpp,
-    rightAnswer: 'Ні',
+    rightAnswer: 'No',
     rightId: QUESTION_ID.LIKE_USE_TEMPLATE,
   }),
 
   [LANGUAGES.Cpp]: getNodeLanguage(LANGUAGES.Cpp),
 
   [QUESTION_ID.LIKE_USE_TEMPLATE]: getNodeInfo({
-    question: 'Полюбляєш використовувати шаблони та хотів би застосовувати їх в програмуванні?',
-    leftAnswer: 'Ні, ніякої "магії"',
+    question: 'Love using patterns and would like to apply them in programming?',
+    leftAnswer: 'No, no "magic"',
     leftId: LANGUAGES.JAVA,
     rightAnswer: 'Так',
     rightId: LANGUAGES.RUBY,
