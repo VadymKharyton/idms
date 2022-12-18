@@ -1,0 +1,18 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 40px;
+
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.crereditForm {
+  width: 500px;
+  margin: 0 auto;
+}

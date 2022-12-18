@@ -1,0 +1,42 @@
+button {
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+.questionBlock h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.questionBlock, .result {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.result .logo {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.result h2 {
+    text-align: center;
+}
+
+.result pre {
+    white-space: break-spaces;
+}
+
+.retry {
+    background-color: #2b4ef8;
+    color: white;
+}

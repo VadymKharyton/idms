@@ -1,0 +1,13 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 40px;
+
+  height: 100%;
+}
+
+.firstLanguageForm {
+  width: 700px;
+  margin: 0 auto;
+}
